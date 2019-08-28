@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App";
+import LazyLoadDemoApp from "./lazy-load-demo";
+import PureComponentDemoApp from "./pure-component-demo";
 
 function randomValue() {
   return Math.round(1000 + Math.random() * 1000) / 10;
@@ -37,4 +38,5 @@ const stocks = [
   fakeStock("Microsoft")
 ];
 
-ReactDOM.render(<App stocks={stocks} />, document.getElementById("root"));
+// ReactDOM.render(<LazyLoadDemoApp stocks={stocks} />, document.getElementById("root"));
+ReactDOM.render(<PureComponentDemoApp />, document.getElementById("root"));
